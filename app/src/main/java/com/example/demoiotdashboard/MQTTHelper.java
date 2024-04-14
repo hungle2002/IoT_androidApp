@@ -18,11 +18,12 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 public class MQTTHelper {
     public MqttAndroidClient mqttAndroidClient;
 
-    public final String[] arrayTopics = {"lequochung/feeds/cambien1", "lequochung/feeds/cambien2"};
+    public final String[] arrayTopics = {"lequochung/feeds/cambien1", "lequochung/feeds/cambien2"
+            , "lequochung/feeds/nutnhan1", "lequochung/feeds/nutnhan2"};
 
     final String clientId = "12345678";
     final String username = "lequochung";
-    final String password = "aio_pvVl505P2bYzuTQv7xn3qG1RkTx0";
+    final String password = "aio_FuAg45jmuO4VQGX4LBacsmsxS3pB";
 
     final String serverUri = "tcp://io.adafruit.com:1883";
 

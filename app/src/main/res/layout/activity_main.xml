@@ -10,7 +10,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10">
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="IOT DEMO"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+        </TextView>
 
     </LinearLayout>
 
@@ -51,14 +64,44 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="20">
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLED"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+
+            app:textOn = "BẬT"
+            app:textOff = "TẮT"
+
+            app:on="false"
+            app:colorBorder="@color/colorAccent"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="20">
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnPUMP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+
+            app:textOn = "BẬT"
+            app:textOff = "TẮT"
+
+            app:on="false"
+            app:colorBorder="@color/colorAccent"/>
     </LinearLayout>
 
     <LinearLayout
