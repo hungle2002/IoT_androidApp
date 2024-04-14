@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
                 Log.d("TEST", topic + "***" + message.toString());
-//                if(topic.contains("cambien1")){
-//                    txtTemp.setText(message.toString() + "°C");
-//                } else if (topic.contains("cambien2")){
-//                    txtHumi.setText(message.toString() + "%");
-//                }
+                if(topic.contains("cambien1")){
+                    txtTemp.setText(message.toString() + "°C");
+                } else if (topic.contains("cambien2")){
+                    txtHumi.setText(message.toString() + "%");
+                }
             }
 
             @Override
